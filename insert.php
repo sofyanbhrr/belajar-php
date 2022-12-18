@@ -1,7 +1,7 @@
 <?php
 
 // tangkap data dari form submit
-if (isset($_POST["submit"])){
+if (isset($_POST["submit"])) {
     $nim = $_POST['nim'];
     $nama = $_POST['nama'];
     $id_jurusan = $_POST['id_jurusan'];
@@ -46,7 +46,7 @@ if (isset($_POST["submit"])){
     <title>Tambah Data Mahasiswa</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="insert.php" method="post">
         NIM: <input type="text" name="nim"><br>
         Nama: <input type="text" name="nama"><br>
         ID Jurusan: <input type="number" name="id_jurusan"><br>
